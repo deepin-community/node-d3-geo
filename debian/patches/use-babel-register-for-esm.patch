@@ -1,0 +1,10 @@
+Description: Use babel register for esm
+ Transform to commonjs using @babel/register instead of esm
+--- /dev/null
++++ b/.babelrc
+@@ -0,0 +1,5 @@
++{
++    "plugins": [
++        "@babel/transform-modules-commonjs",
++    ],
++}

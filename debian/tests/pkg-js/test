@@ -1,0 +1,9 @@
+(
+	cd debian/tests/test_modules/topojson-client
+	babeljs -d dist --presets '@babel/preset-env' src/
+)
+if test "$AUTOPKGTEST_TMP" != ""; then
+	rm -f src
+	cp -a /usr/share/nodejs/d3-geo/src .
+fi
+tape -r @babel/register 'test/**/*.js'
