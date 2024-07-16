@@ -1,7 +1,9 @@
 # false positives
-node-d3-geo source: source-is-missing test/circle-test.js line length is 600 characters (>512)
-node-d3-geo source: source-is-missing test/graticule-test.js line length is 609 characters (>512)
-node-d3-geo source: very-long-line-length-in-source-file test/circle-test.js line length is 602 characters (>512)
-node-d3-geo source: source-contains-prebuilt-javascript-object test/circle-test.js line length is 600 characters (>512)
-node-d3-geo source: very-long-line-length-in-source-file test/graticule-test.js line length is 613 characters (>512)
-node-d3-geo source: source-contains-prebuilt-javascript-object test/graticule-test.js line length is 609 characters (>512)
+node-d3-geo source: source-is-missing [test/circle-test.js]
+node-d3-geo source: source-is-missing [test/graticule-test.js]
+node-d3-geo source: very-long-line-length-in-source-file 602 > 512 [test/circle-test.js:*]
+node-d3-geo source: source-contains-prebuilt-javascript-object [test/circle-test.js]
+node-d3-geo source: very-long-line-length-in-source-file 613 > 512 [test/graticule-test.js:*]
+node-d3-geo source: source-contains-prebuilt-javascript-object [test/graticule-test.js]
+# Generic types-* path
+add-component-copyright types-*
